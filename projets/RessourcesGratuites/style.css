@@ -182,6 +182,14 @@ main {
   line-height: 1;
 }
 
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 .card-tag {
   font-size: 0.72rem;
   font-weight: 600;
@@ -206,6 +214,10 @@ main {
 }
 
 .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   margin-top: 16px;
   padding-top: 14px;
   border-top: 1px solid #1e1e1e;
@@ -216,10 +228,19 @@ main {
   color: #444;
   font-weight: 500;
   transition: color 0.15s;
+  white-space: nowrap;
 }
 
 .card:hover .card-visit {
   color: #888;
+}
+
+.card-warning {
+  font-size: 0.68rem;
+  color: #2e2e2e;
+  font-style: italic;
+  line-height: 1.3;
+  text-align: right;
 }
 
 /* ── Empty state ── */
